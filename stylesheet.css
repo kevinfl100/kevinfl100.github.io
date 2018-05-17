@@ -1,0 +1,56 @@
+body {
+
+    background-color: #bce5d8;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+.page {
+
+    text-align: center;
+
+}
+
+
+.content {
+
+    background-color: #EAF7F3;
+
+    border: 1px solid blue;
+
+    margin: 0 auto;
+
+    width: 720px;
+
+}
+
+.nav {
+    margin: 0 auto;
+}
+
+
+.strengths {
+    background-color: #8D230F
+}
+
+
+.college {
+    background-color: #000B29
+}
+
+.tech-in-my-life {
+    background-color: #FE0000
+}
+
+.ap-explore {
+    background-color: #FB6542
+}
+
+
+.nepal-trip {
+    background-color: #003B46
+}

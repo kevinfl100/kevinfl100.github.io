@@ -1,0 +1,73 @@
+<html>
+
+<head>
+
+    <title>Kevin’s Capstone Site</title>
+
+    <link href="stylesheet.css" rel="stylesheet" />
+
+</head>
+
+
+
+<body class="tech-in-my-life">
+
+    <div class="page">
+
+        <div class="content">
+
+            <h1>Kevin's Site</h1>
+            <table class="nav">
+
+                <tr>
+
+                    <td><a href="index.html">Home</a></td>
+
+                    <td><a href="strengths.html">Strengths Profile</a></td>
+
+                    <td><a href="college.html">Colleges</a></td>
+
+                    <td><a href="tech-in-my-life.html">tech-in-my-life</a></td>
+
+                    <td><a href="ap-create.html">AP Create</a></td>
+
+                    <td><a href="ap-explore.html">AP Explore</a></td>
+
+                    <td><a href="nepal-trip.html">Nepal Trip</a></td>
+
+
+
+                </tr>
+
+            </table>
+            <p>
+                My program is written in javaScript. The purpose of my program is to dodge boxes from bring the white box down if the boxes bring the white box down the game is over ad you would have to click with the mouse. In this video clip, you can see me dodge the
+                colored boxes.
+
+            </p>
+            <p>My partner and I used iterative pair programming by taking turns to coding and design the boxes. My partner and I wrote the repeating loop together. I wrote the part were the boxes will go randomly down to try and push the white box down independently.
+                The first developmental challenge I encountered was to put the random locations for the boxes. I solved this challenge by finding out what was the Y axis and parts and sides to go down to. The second developmental challenge I encountered
+                was the click function it mean when the game is over when you click it restarts the game. I solved this challenge by looking it up on the p5js.org/reference we did this so you won't have to press the refresh button all the time.</p>
+
+            <p>function drawLevelOne() { drawEighth(); maincharacter.bounce(leftWall); maincharacter.bounce(rightWall); if(maincharacter.position.y>height) { level="gameOver"; } for(let i=0;i
+                <students.length;i++) { maincharacter.collide(students[i]); if(students[i].position.y>height) { students[i].position.y=-10; students[i].position.x=random(20,370); } } background(50); fill(255); if(keyDown(LEFT_ARROW)) { maincharacter.position.x -= 10; } if(keyDown(RIGHT_ARROW)) { maincharacter.position.x += 10; } drawSprites();
+                    } The purpose of this block of code is to control all the functions of the game.When this code runs correctly, it starts the game it starts to move the boxes to try to push the main box down and it makes sure when the white box is
+                    touching the wall it bounces off. When the boxes push the white box down the game is over and the game ends and the arrows control the white box. If this program did not include this algorithm, it wouldnt start none of the controls
+                    and nothing would move and the screen would be black. This algorithm works with if(maincharacter.position.y>height)this is when the box is of the y height the game is over. for (let i = 0; i
+                    < students.length; i++) { maincharacter.collide(students[i]); if (students[i].position.y>
+                        height) { students[i].position.y = -10; students[i].position.x = random(20, 370); } this for loop makes sure that the boxes that pushes the white box go back up to their starting point.
+            </p>
+
+            <p>An example of an abstraction in my program is function hallway() { leftWall = createSprite(0,0,20,1400); leftWall.immovable = true; rightWall = createSprite(400,0,20,1400); rightWall.immovable = true; } This simplifies my program by shortening
+                it. Instead of writing leftWall ect all you have to put hallWay and it would automatically understand what it means. I created this abstraction to avoid repeating myself when creating the hallway for the game. If this abstraction weren’t
+                present, then there would be a hallway were the boxes can be in place.
+
+            </p>
+            <div class="glitch-embed-wrap" style="height:800px; width: 100%;">
+                <iframe src="https://glitch.com/embed/#!/embed/ap-create---task?path=hallway.js&previewSize=100" alt="ap-create---task on glitch" style="height: 100%; width: 100%; border: 0;"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
